@@ -12,13 +12,13 @@
 <title>Airline Staff Car Rental Discounts | Crew Car Hire Worldwide</title>
 <meta name="description" content="Exclusive car rental discounts for airline staff, cabin crew, pilots and ground crew. Compare crew rates from Hertz, Avis, Europcar and more — book worldwide with free amendments and low deposits.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.airlinecarrentals.com/">
+<link rel="canonical" href="https://nonrevcars.com/">
 
 <!-- Open Graph / social sharing -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Car Rental Discounts for Airline Staff & Crew">
 <meta property="og:description" content="Crew rates on car hire, anywhere you land. Compare top providers and book worldwide with low deposits and free amendments.">
-<meta property="og:url" content="https://www.airlinecarrentals.com/">
+<meta property="og:url" content="https://nonrevcars.com/">
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- FAQ structured data — helps you win rich results in Google -->
@@ -27,8 +27,10 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {"@type":"Question","name":"How much can I save on airline staff car rentals?","acceptedAnswer":{"@type":"Answer","text":"Members report saving 20–40% versus standard public rates, depending on destination, provider and dates. The live search always shows the current price for your trip."}},
+    {"@type":"Question","name":"Are there any booking or card fees?","acceptedAnswer":{"@type":"Answer","text":"No. There are no hidden fees, no credit card fees, and no amendment fees."}},
     {"@type":"Question","name":"Who can use these airline staff car rental discounts?","acceptedAnswer":{"@type":"Answer","text":"Our crew rates are aimed at airline employees — cabin crew, pilots, ground staff, and in many cases their immediate family — but anyone can book through the site."}},
-    {"@type":"Question","name":"Which car rental companies are available?","acceptedAnswer":{"@type":"Answer","text":"Bookings are fulfilled through leading global providers including Hertz, Avis, Europcar, Alamo, National and Thrifty, compared side by side so you get the best available rate."}},
+    {"@type":"Question","name":"Which car rental companies are available?","acceptedAnswer":{"@type":"Answer","text":"Bookings are fulfilled through leading global providers including Hertz, Avis, Europcar, Alamo, National and Thrifty, compared side by side across more than 6,000 locations worldwide."}},
     {"@type":"Question","name":"Do I pay the full amount upfront?","acceptedAnswer":{"@type":"Answer","text":"No. You secure your booking with a small advance payment and settle the balance when you pick up the car."}},
     {"@type":"Question","name":"Can I change or cancel my booking?","acceptedAnswer":{"@type":"Answer","text":"Yes. Amendments are free, and free cancellation is available up to 48 hours before your rental begins."}}
   ]
@@ -135,11 +137,20 @@
   .hero h1{font-size:clamp(2.6rem,6vw,4.35rem);color:#fff;margin-bottom:22px}
   .hero h1 em{font-style:italic;color:var(--gold-soft);font-weight:500}
   .hero p.lead{font-size:1.18rem;color:rgba(246,241,231,.8);max-width:30em;margin-bottom:34px}
+  .hero p.no-code{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;
+    color:var(--gold-soft);background:rgba(224,169,62,.1);border:1px solid rgba(224,169,62,.28);
+    padding:9px 16px;border-radius:50px;margin-bottom:30px}
   .hero-cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-  .trust-row{margin-top:40px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  .trust-row{margin-top:40px;display:flex;align-items:center;gap:18px 24px;flex-wrap:wrap;
     color:rgba(246,241,231,.55);font-size:.82rem}
   .trust-row .names{display:flex;gap:18px;flex-wrap:wrap;font-weight:600;color:rgba(246,241,231,.78);
     font-family:'Fraunces',serif;letter-spacing:.02em}
+  .logo-strip{display:flex;align-items:center;gap:14px 26px;flex-wrap:wrap}
+  .logo-strip img{height:26px;width:auto;max-width:110px;object-fit:contain;
+    /* logos are usually dark; this keeps them legible on the navy hero */
+    filter:brightness(0) invert(1);opacity:.82;transition:opacity .2s ease}
+  .logo-strip img:hover{opacity:1}
+  @media(max-width:520px){.logo-strip img{height:20px;max-width:84px}}
 
   /* ---------- BOOKING / SEARCH CARD (boarding-pass styled) ---------- */
   .pass{background:var(--paper-2);color:var(--ink);border-radius:20px;overflow:hidden;
@@ -164,9 +175,27 @@
   .widget-wrap{position:relative;width:100%;border-radius:12px;overflow:hidden;background:#fff;border:1.5px solid var(--line)}
   .widget-wrap iframe{display:block;width:100%;height:520px;border:0}
   @media(max-width:920px){.widget-wrap iframe{height:560px}}
+  /* embedded widgets placed in body sections */
+  .embed{width:100%;border:0;display:block;border-radius:14px}
+  .embed-deals{height:560px;background:transparent}
+  .embed-highlights-text{height:300px;background:transparent}
+  .embed-highlights-images{height:340px;background:transparent}
+  .embed-frame{max-width:900px;margin:38px auto 0}
+  @media(max-width:680px){
+    .embed-deals{height:680px}
+    .embed-highlights-text{height:420px}
+    .embed-highlights-images{height:460px}
+  }
 
   /* ---------- SECTIONS ---------- */
   section{padding:90px 0}
+
+  /* TRUST BAR */
+  .trustbar{padding:26px 0;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .trustbar .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 38px;align-items:center}
+  .trust-item{display:flex;align-items:center;gap:9px;font-weight:600;font-size:.96rem;color:var(--ink)}
+  .trust-item .tnum{color:var(--gold);font-family:'Fraunces',serif;font-weight:700;font-size:1.02rem}
+  @media(max-width:680px){.trustbar .wrap{gap:12px 22px}.trust-item{font-size:.86rem}}
   .sec-eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
     font-weight:700;margin-bottom:14px}
   .sec-title{font-size:clamp(2rem,4vw,2.9rem);margin-bottom:18px;max-width:16em}
@@ -258,7 +287,7 @@
       <a href="#how">How it works</a>
       <a href="#who">Who it's for</a>
       <a href="#faq">FAQ</a>
-      <a class="cta-sm" href="https://airlinecarrentals.carrentalnet.com/" target="_blank" rel="noopener">Search cars</a>
+      <a class="cta-sm" href="#offer">Search cars</a>
     </nav>
     <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -270,12 +299,13 @@
 <section class="hero">
   <div class="wrap">
     <div class="reveal">
-      <span class="eyebrow">For cabin crew · pilots · ground staff</span>
+      <span class="eyebrow">For airline professionals · their families &amp; friends</span>
       <h1>Crew rates on car hire, <em>anywhere you land.</em></h1>
-      <p class="lead">Exclusive discounts on car rental for airline staff worldwide. Compare the big-name providers, lock in your rate with a small deposit, and change plans for free if your roster does.</p>
+      <p class="lead">Members report saving <strong style="color:#fff">20–40% versus public rates</strong> on car hire worldwide. Built for how crew travel — odd hours, last-minute roster changes, unfamiliar cities. Compare the big names, hold your car with a small deposit, and amend for free when plans shift.</p>
+      <p class="no-code">No promo codes required — the crew rates are built in. Just word of mouth.</p>
       <div class="hero-cta">
-        <a class="btn" href="https://airlinecarrentals.carrentalnet.com/" target="_blank" rel="noopener">Search live crew rates <span class="arr">→</span></a>
-        <a class="btn-ghost" href="#how">See how it works</a>
+        <a class="btn" href="#offer">See live crew rates <span class="arr">→</span></a>
+        <a class="btn-ghost" href="#how">How it works</a>
       </div>
       <div class="trust-row">
         <span>Powered by a global network:</span>
@@ -305,12 +335,28 @@
   </div>
 </section>
 
+<!-- TRUST BAR -->
+<section class="trustbar">
+  <div class="wrap">
+    <div class="trust-item"><span class="tnum">✓</span> No hidden fees</div>
+    <div class="trust-item"><span class="tnum">✓</span> No credit card fees</div>
+    <div class="trust-item"><span class="tnum">✓</span> No amendment fees</div>
+    <div class="trust-item"><span class="tnum">6,000+</span> locations worldwide</div>
+    <div class="trust-item"><span class="tnum">15+ yrs</span> booking experience</div>
+  </div>
+</section>
+
 <!-- OFFER -->
 <section class="offer" id="offer">
   <div class="wrap reveal">
     <p class="sec-eyebrow" style="color:var(--gold-soft)">The crew advantage</p>
-    <div class="big">Up to <span class="ph">[XX]%</span> off</div>
-    <p>standard daily rates at airports and city locations across the globe — negotiated rates designed around how airline staff actually travel. <strong style="color:var(--gold-soft)">[Confirm your real headline discount/claim here.]</strong></p>
+    <div class="big" style="font-size:clamp(2.2rem,5vw,3.4rem)">Today's crew deals</div>
+    <p>Live offers on car hire across airports and city locations worldwide — negotiated rates designed around how airline staff actually travel.</p>
+    <div class="embed-frame">
+      <iframe class="embed embed-deals"
+        src="https://airlinecarrentals.carrentalnet.com/en-us/widgets/promo_deals"
+        title="Current car rental deals" loading="lazy"></iframe>
+    </div>
   </div>
 </section>
 
@@ -343,6 +389,11 @@
         <p>Compare Hertz, Avis, Europcar and more side by side so you always see the best available rate.</p>
       </div>
     </div>
+    <div class="embed-frame reveal">
+      <iframe class="embed embed-highlights-images"
+        src="https://airlinecarrentals.carrentalnet.com/en-us/widgets/highlights?type=images"
+        title="Trusted car rental providers" loading="lazy"></iframe>
+    </div>
   </div>
 </section>
 
@@ -357,6 +408,11 @@
       <div class="step reveal"><div class="num">01</div><h3>Tell us where</h3><p>Enter your pick-up location and dates. We search availability across the global provider network.</p></div>
       <div class="step reveal"><div class="num">02</div><h3>Compare crew rates</h3><p>See the providers side by side and pick the car and price that suits your trip.</p></div>
       <div class="step reveal"><div class="num">03</div><h3>Book &amp; fly</h3><p>Reserve with a small deposit. Amend for free if plans change, and collect the keys on arrival.</p></div>
+    </div>
+    <div class="embed-frame reveal">
+      <iframe class="embed embed-highlights-text"
+        src="https://airlinecarrentals.carrentalnet.com/en-us/widgets/highlights?type=text"
+        title="Why book with us" loading="lazy"></iframe>
     </div>
     <div style="margin-top:46px" class="reveal">
       <a class="btn" href="https://airlinecarrentals.carrentalnet.com/" target="_blank" rel="noopener">Start a search <span class="arr">→</span></a>
@@ -389,8 +445,10 @@
       <h2 class="sec-title" style="margin-inline:auto">Frequently asked questions</h2>
     </div>
     <div class="faq reveal">
+      <details><summary>How much can I actually save?<span class="pm">+</span></summary><p>Members report saving 20–40% versus standard public rates, depending on the destination, provider and dates. Because the rates and availability change constantly, the search above always shows you the live price for your trip.</p></details>
+      <details><summary>Are there any booking or card fees?<span class="pm">+</span></summary><p>No. There are no hidden fees, no credit card fees, and no amendment fees. You see the price you pay.</p></details>
       <details><summary>Who can use these airline staff car rental discounts?<span class="pm">+</span></summary><p>The crew rates are aimed at airline employees — cabin crew, pilots, ground and operations staff, and in many cases their immediate family. Anyone can book through the site.</p></details>
-      <details><summary>Which car rental companies can I book?<span class="pm">+</span></summary><p>Bookings are fulfilled through leading global providers including Hertz, Avis, Europcar, Alamo, National and Thrifty, compared side by side so you get the best available rate.</p></details>
+      <details><summary>Which car rental companies can I book?<span class="pm">+</span></summary><p>Bookings are fulfilled through leading global providers including Hertz, Avis, Europcar, Alamo, National and Thrifty, compared side by side so you get the best available rate, across more than 6,000 locations worldwide.</p></details>
       <details><summary>Do I pay the full amount upfront?<span class="pm">+</span></summary><p>No — you secure the booking with a small advance payment and pay the balance when you collect the car.</p></details>
       <details><summary>Can I change or cancel if my roster changes?<span class="pm">+</span></summary><p>Yes. Amendments are free, and free cancellation is available up to 48 hours before your rental begins.</p></details>
     </div>
@@ -401,8 +459,8 @@
 <section class="final">
   <div class="wrap reveal">
     <h2>Your next layover deserves a better deal.</h2>
-    <p>Compare crew rates in a couple of minutes and book the car that fits your trip.</p>
-    <a class="btn" href="https://airlinecarrentals.carrentalnet.com/" target="_blank" rel="noopener">Search car rentals now <span class="arr">→</span></a>
+    <p>Members report saving 20–40% versus public rates. Check the live price for your trip — it takes about two minutes.</p>
+    <a class="btn" href="#offer">Search car rentals now <span class="arr">→</span></a>
   </div>
 </section>
 
@@ -429,8 +487,7 @@
     </div>
   </div>
   <p class="disclaimer">
-    Airline Staff Car Rentals is an independent affiliate. Bookings are made through our booking partner CarRentalNet, and we may earn a commission on reservations made through links on this site at no extra cost to you. Car rental brand names are the property of their respective owners.
-    <!-- TODO: replace [XX]% offer claim with your verified discount, add your real contact details, and confirm the brand logos/claims you're permitted to display under your affiliate terms. -->
+    Airline Staff Car Rentals (nonrevcars.com) is an independent affiliate. Bookings are made through our booking partner, and we may earn a commission on reservations made through this site at no extra cost to you. Savings of 20–40% are based on member-reported comparisons against standard public rates and vary by destination, provider and dates; the live search shows the current price for your trip. Car rental brand names are the property of their respective owners.
   </p>
 </footer>
 

@@ -12,8 +12,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nonrevcars.com/how-cabin-crew-save-on-car-hire.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nonrevcars.com/car-rental-on-a-layover.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nonrevcars.com/airline-staff-family-car-rental-discounts.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nonrevcars.com/car-hire-hub-airports.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!--
-    When you publish more articles later, copy one of the <url> blocks above
-    and change the <loc> to the new article's address.
+    When you publish more articles later, copy a <url> block and change the <loc>.
   -->
 </urlset>

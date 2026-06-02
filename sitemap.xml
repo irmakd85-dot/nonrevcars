@@ -6,13 +6,14 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://nonrevcars.com/airline-employee-car-rental-discounts.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!--
-    When you publish new articles/pages later, add a block like this for each one:
-    <url>
-      <loc>https://nonrevcars.com/your-article-name</loc>
-      <lastmod>2026-06-15</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-    </url>
+    When you publish more articles later, copy one of the <url> blocks above
+    and change the <loc> to the new article's address.
   -->
 </urlset>

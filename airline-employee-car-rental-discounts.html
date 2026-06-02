@@ -89,8 +89,18 @@
   details[open] summary .pm{transform:rotate(45deg)}
   details p{padding:0 0 16px;color:var(--muted)}
 
-  footer{background:#070F1A;color:rgba(246,241,231,.55);font-size:.88rem;padding:34px 0;text-align:center}
-  footer a{color:rgba(246,241,231,.7)}
+  footer{background:#070F1A;color:rgba(246,241,231,.6);font-size:.9rem;padding:0;text-align:left}
+  footer .footer-grid{max-width:1100px;padding:48px 24px 28px;display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1fr;gap:34px}
+  @media(max-width:860px){footer .footer-grid{grid-template-columns:1fr 1fr;gap:28px}}
+  @media(max-width:520px){footer .footer-grid{grid-template-columns:1fr;gap:24px}}
+  footer h4{font-family:'Fraunces',serif;color:var(--paper);font-size:1.05rem;margin-bottom:12px}
+  footer a{display:block;color:rgba(246,241,231,.6);padding:4px 0;text-decoration:none;transition:color .2s}
+  footer a:hover{color:var(--gold)}
+  footer .flogo{display:flex;align-items:center;gap:10px;color:var(--paper);font-family:'Fraunces',serif;font-weight:600;font-size:1.1rem}
+  footer .flogo .mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));display:grid;place-items:center;color:var(--navy);transform:rotate(-8deg)}
+  footer .flogo .mark svg{width:17px;height:17px}
+  footer .flogo:hover{color:var(--paper)}
+  .disclaimer{border-top:1px solid rgba(255,255,255,.08);font-size:.8rem;color:rgba(246,241,231,.42);padding:22px 24px;max-width:1100px;margin:0 auto;line-height:1.6}
 </style>
 </head>
 <body>
@@ -179,9 +189,37 @@
 </article>
 
 <footer>
-  <div class="wrap">
-    <p>NonRevCars — car rental discounts for airline staff worldwide. <a href="/">Back to home</a></p>
+  <div class="wrap footer-grid">
+    <div>
+      <a href="/" class="flogo"><span class="mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.5 13.5 11V4a1.5 1.5 0 0 0-3 0v7L2 16.5V18l8.5-2.5V20L8 21.5V23l4-1 4 1v-1.5L13.5 20v-4.5L22 18v-1.5Z"/></svg></span>Airline Staff Car Rentals</a>
+      <p style="max-width:32ch;margin-top:12px">Exclusive car rental discounts for airline staff and crew, worldwide. Search, compare and book in minutes.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="/#offer">The offer</a>
+      <a href="/#how">How it works</a>
+      <a href="/#who">Who it's for</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+    <div>
+      <h4>Crew guides</h4>
+      <a href="/airline-employee-car-rental-discounts.html">Do airline staff get discounts?</a>
+      <a href="/how-cabin-crew-save-on-car-hire.html">How cabin crew save on car hire</a>
+      <a href="/car-rental-on-a-layover.html">Car hire on a layover</a>
+      <a href="/airline-staff-family-car-rental-discounts.html">Can family use the discounts?</a>
+      <a href="/car-hire-hub-airports.html">Car hire at hub airports</a>
+    </div>
+    <div>
+      <h4>Booking &amp; support</h4>
+      <a href="https://airlinecarrentals.carrentalnet.com/" target="_blank" rel="noopener">Search cars</a>
+      <a href="https://airlinecarrentals.carrentalnet.com/en-us/customer/customer-booking" target="_blank" rel="noopener">Manage my booking</a>
+      <a href="https://airlinecarrentals.carrentalnet.com/en-us/information/faq" target="_blank" rel="noopener">Provider FAQ</a>
+      <a href="https://airlinecarrentals.carrentalnet.com/en-us/information/contact" target="_blank" rel="noopener">Contact</a>
+    </div>
   </div>
+  <p class="disclaimer">
+    Airline Staff Car Rentals (nonrevcars.com) is an independent affiliate. Bookings are made through our booking partner, and we may earn a commission on reservations made through this site at no extra cost to you. Savings of 20–40% are based on member-reported comparisons against standard public rates and vary by destination, provider and dates; the live search shows the current price for your trip. Car rental brand names are the property of their respective owners.
+  </p>
 </footer>
 
 </body>

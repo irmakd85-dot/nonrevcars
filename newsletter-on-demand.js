@@ -12,14 +12,16 @@
     waiting.push(done);
     if (loading) return;
     loading = true;
+    // Match MailerLite's documented bootstrap order: queue the account call
+    // before the asynchronously loaded Universal script executes.
+    window.ml = window.ml || function () {
+      (window.ml.q = window.ml.q || []).push(arguments);
+    };
+    window.ml('account', ACCOUNT);
     var s = document.createElement('script');
     s.src = 'https://assets.mailerlite.com/js/universal.js';
     s.async = true;
     s.onload = function () {
-      window.ml = window.ml || function () {
-        (window.ml.q = window.ml.q || []).push(arguments);
-      };
-      window.ml('account', ACCOUNT);
       loaded = true;
       loading = false;
       waiting.splice(0).forEach(function (callback) { callback(true); });

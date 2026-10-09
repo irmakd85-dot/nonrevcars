@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Analytics loads only after visitor opts in -->
+<script defer src="/analytics-consent.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -538,5 +540,6 @@ ml('account', '2399747');
   },{threshold:.12});
   document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay=(i%3*0.08)+'s'; io.observe(el); });
 </script>
+<script defer src="/booking-referrals.js"></script>
 </body>
 </html>

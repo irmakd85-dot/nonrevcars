@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Analytics loads only after visitor opts in -->
+<script defer src="/analytics-consent.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About NonRevCars | Airline Staff Car Rentals</title>
@@ -12,15 +14,8 @@
 <meta property="og:description" content="Who's behind NonRevCars, why we built it, and how the site works.">
 <meta property="og:url" content="https://nonrevcars.com/about.html">
 
-<!-- MailerLite Universal -->
-<script>
-(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-.push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-ml('account', '2399747');
-</script>
-<!-- End MailerLite Universal -->
+<!-- Newsletter form loads only after visitor interaction -->
+<script defer src="/newsletter-on-demand.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -187,5 +182,6 @@ ml('account', '2399747');
     Airline Staff Car Rentals (nonrevcars.com) is an independent affiliate. Bookings are made through our booking partner, and we may earn a commission on reservations made through this site at no extra cost to you. Savings of 20–40% are based on member-reported comparisons against standard public rates and vary by destination, provider and dates; the live search shows the current price for your trip. Car rental brand names are the property of their respective owners.
   </p>
 </footer>
+<script defer src="/booking-referrals.js"></script>
 </body>
 </html>
